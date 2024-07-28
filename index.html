@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Biodiversity Hotspot Mapper</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+    
+</head>
+<body>
+    <header>
+        <h1>Global Biodiversity Hotspot Mapper</h1>
+    </header>
+    <input type="text" id="searchInput" placeholder="Search Hotspots...">
+<button onclick="searchHotspot()">Search</button>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Biodiversity Hotspots</h2>
+            <ul>
+                <li><a href="#" onclick="focusOnHotspot('Western Ghats')">Western Ghats</a></li>
+                <li><a href="#" onclick="focusOnHotspot('Eastern Himalayas')">Eastern Himalayas</a></li>
+                <li><a href="#" onclick="focusOnHotspot('Indo-Burma region')">Indo-Burma Region</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div id="map"></div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
